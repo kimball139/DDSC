@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,21 +15,111 @@
         <meta name="msapplication-TileColor" content="#FFFFFF" />
         <meta name="msapplication-TileImage" content="http://www.ddsoccer.org/mstile-144x144.png" />
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="assets/css/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/foundation.css" />
+        <link rel="stylesheet" href="assets/css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="assets/js/vendor/modernizr.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="container-fluid">
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+          <!-- Creates the navbar -->
+            <nav class="top-bar">
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+              <!-- This is the brand on the left-hand side. 
+              <a class="navbar-brand" href="/#">David Douglas Soccer Club</a>
+              <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+              -->
+              <!-- LOGIN FORM -->  
+              <form class="topbar-form topbar-right" action="https://secure.sportsaffinity.com/index.asp?sessionguid=&domain=oysa%2Dddys%2Esportsaffinity%2Ecom" name="Login" method="post" id="Form1">
+                <input type="hidden" name="action" value="LOG-IN" id="Hidden1">
 
-        <script src="js/main.js"></script>
+
+
+                  <!-- U S E R N A M E -->
+                  <div class="form-group">
+                      <input id="username" type="text" placeholder="Username" name="username" class="form-control">
+                  </div>
+
+                  <!-- P A S S W O R D -->
+                  <div class="form-group">
+                      <input id="password" type="password" placeholder="Password" name="password" class="form-control">
+                  </div>
+
+                  <!-- S U B M I T -->
+                  <button type="submit" class="btn btn-success" value="Login" name="Submit1" id="Submit1">Sign In
+                  </button>
+              </form>
+            </nav>
+          </div>
+        </div>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+
+        <div class="off-canvas-wrap" data-offcanvas>
+          <div class="inner-wrap">
+          <nav class="header"></nav>
+            <a class="right-off-canvas-toggle" href="#" >
+              <div class="menu">
+                <div class="top-hamburger-bar"></div>
+                <div class="middle-hamburger-bar"></div>
+                <div class="bottom-hamburger-bar"></div>
+              </div>
+            </a>
+          </nav>
+            <!-- Off Canvas Menu -->
+            <aside class="right-off-canvas-menu">
+                <!-- whatever you want goes here -->
+                <ul class="side-nav main">
+                  <li><a class="is-active" href="#">faster</a></li>
+                  <li><a href="#">smarter</a></li>
+                  <li><a href="#">easier</a></li>
+                  <li><a href="#">all you</a></li>
+                </ul>
+                <ul class="side-nav secondary">
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">contact us</a></li>
+                  <li><a href="#">press</a></li>
+                  <li><a href="#">blog</a></li>
+                </ul>
+                <ul class="inline-list social">
+                  <li><i class="fi-social-facebook"></i></li>
+                  <li><i class="fi-social-pinterest"></i></li>
+                  <li><i class="fi-social-youtube"></i></li>
+                  <li><i class="fi-social-twitter"></i></li>
+                </ul>
+            </aside>
+              <section class="hero">
+                <div><h1><img class="logo" src="/assets/img/ddsclogo-small.png" alt="logo" style="float:left"/>DAVID DOUGLAS SOCCER CLUB</h1>
+                <h2>PORTLAND, OREGON</h2>
+                </div>
+              </section>
+            <!-- main content goes here -->
+            
+          <!-- close the off-canvas menu -->
+          <a class="exit-off-canvas"></a>
+
+          </div>
+        </div>
+
+        <script src="assets/js/vendor/jquery.js"></script>
+        <script src="assets/js/foundation.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        <script>
+        $(function() {
+        $(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
+        $(".top-hamburger-bar").toggleClass("top-bar-close");
+        $(".middle-hamburger-bar").toggleClass("middle-bar-close");
+        $(".bottom-hamburger-bar").toggleClass("bottom-bar-close");
+            });
+        });
+        </script>
     </body>
 </html>
