@@ -153,11 +153,15 @@ textarea {
   margin: 3.5rem 2.5rem; }
 
 .hero {
-  background: url("../img/field-banner-small.jpg") no-repeat center center fixed;
+  background: url("../img/field-banner-small.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh; }
+  background-color: #161314;
+  height: 100vh; 
+  border-bottom: #161314;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;}
   .hero img.logo {
-    width: 18rem;
+    width: 26rem;
     padding: 2rem; }
 
 .hero h1 {
@@ -218,7 +222,7 @@ textarea {
   display: block;
   width: 40px;
   height: 10px;
-  background-color: #333333;
+  background-color: #161314;
   margin-bottom: 4px;
   transition: transform 0.4s cubic-bezier(1, 0, 0, 1) 0, background-color 0.6s ease 0; }
 
@@ -231,7 +235,7 @@ textarea {
 
 .top-bar-close {
   transform: rotate(-45deg);
-  background-color: #333333; }
+  background-color: #161314; }
 
 .middle-bar-close {
   opacity: 0;
@@ -240,9 +244,53 @@ textarea {
 
 .bottom-bar-close {
   transform: rotate(45deg);
-  background-color: #333333; }
+  background-color: #161314; }
 
-              
+/******** Homepage **********/
+
+h2.home-titles {
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline; 
+    font-size: 3em;
+    color: #8b8c90;
+    font-family: Tahoma, Geneva, sans-serif;
+}       
+
+p.home-p {
+    font-size: 22px;
+    color: #161314;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: justify;
+}    
+
+/****** footer *******/
+
+.footer {
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem; }
+  .footer p.slogan {
+    color: #8b8c90;
+    font-size: 1.8rem;
+    margin: 0 0 1rem; }
+  .footer p.copywrite {
+    color: #8b8c90;
+    font-size: 0.875rem;
+    margin: 0; }
+  .footer .links a {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3rem 0 2rem;
+    margin: 0; }
+    .footer .links a::after {
+      content: "•";
+      padding: 0 0.4rem 0 0.8rem; }
+    .footer .links a:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem; }
 
 
 
