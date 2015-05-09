@@ -61,7 +61,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -763,7 +763,8 @@ select {
   .pull-9 {
     position: relative;
     right: 75%;
-    left: auto; }
+    left: auto; 
+    padding-left: 0;}
 
   .push-10 {
     position: relative;
@@ -1126,7 +1127,8 @@ select {
   .pull-9 {
     position: relative;
     right: 75%;
-    left: auto; }
+    left: auto; 
+    padding-left: 0; }
 
   .push-10 {
     position: relative;
@@ -3687,7 +3689,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -3697,7 +3699,8 @@ h1, h2, h3, h4, h5, h6 {
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     color: #6f6f6f;
     font-size: 60%;
-    line-height: 0; }
+    line-height: 0; 
+    font-family: Tahoma, Geneva, sans-serif;}
 
 h1 {
   font-size: 2.125rem; }
@@ -3867,7 +3870,8 @@ blockquote p {
 
 @media only screen and (min-width: 40.0625em) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4; }
+    line-height: 1.4; 
+    font-family: Tahoma, Geneva, sans-serif;}
 
   h1 {
     font-size: 2.75rem; }

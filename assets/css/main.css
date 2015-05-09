@@ -62,6 +62,12 @@ textarea {
     padding-right: 20px;
 }
 
+.top-bar-not-home {
+    border-bottom-width: 7px;
+    border-color: #8b8c90;
+    border-bottom-style: solid;
+}
+
 .topbar-form {
   padding: 10px 15px;
   margin-top: 6px;
@@ -262,12 +268,88 @@ p.home-p {
     color: #161314;
     font-family: Tahoma, Geneva, sans-serif;
     text-align: justify;
-}    
+}
+
+
+/****** Other Pages *******/
+
+.main-content {
+    background-color: #ec1b16;
+}
+
+.logo-white-space, .white-space {
+    background-color: white;
+    padding-bottom: 50px;
+}  
+
+
+.logo-white-space img.logo {
+    width: 10rem;
+    margin: 10px auto 0px; 
+}
+
+.center-title {
+    display: inline-block;
+    margin-top: 55px;
+}
+
+h2.page-title {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: underline;
+
+}
+
+.logo-white-space h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.side-nav li a:not(.button) {
+    color: #8b8c90;
+}
+
+ul.side-nav li:hover {
+    background-color: #ec1b16;
+}
+
+.side-nav li a:not(.button):hover {
+    color: #ffffff;
+}
+
+ul.side-nav li.active {
+    background-color: #ec1b16;
+}
+
+.side-nav li.active > a:first-child:not(.button) {
+    color: #ffffff;
+}
+
+p.other-p {
+    font-size: 1rem;
+    color: #161314;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: justify;
+    margin-bottom: 12px;
+}  
+
+p.other-p a {
+    color: #8b8c90;
+}
+
+p.other-p a:hover {
+    color: #ec1b16;
+    text-decoration: underline;
+}
+
+p.address-p {
+    line-height: 0.6;
+}
 
 /****** footer *******/
 
 .footer {
-  background-color: #292c2f;
+  background-color: #161314;
   text-align: center;
   font-size: 1.2rem;
   padding: 4rem; }
