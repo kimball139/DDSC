@@ -1171,7 +1171,7 @@ button, .button {
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007095; }
+    background-color: #ec1b16; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #FFFFFF; }
   button.secondary, .button.secondary {
@@ -1238,8 +1238,8 @@ button, .button {
   button.round, .button.round {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #008CBA;
-    border-color: #007095;
+    background-color: #f0504c;
+    border-color: #ec1b16;
     color: #FFFFFF;
     box-shadow: none;
     cursor: default;
@@ -1249,7 +1249,7 @@ button, .button {
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: #FFFFFF; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #008CBA; }
+      background-color: #f0504c; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #e7e7e7;
       border-color: #b9b9b9;
@@ -2248,7 +2248,7 @@ meta.foundation-mq-topbar {
     color: #161314;
     font-size: 1.375rem;
     line-height: .9;
-    margin-top: -0.6875rem;
+    margin-top: -2.6875rem;
     opacity: 0.3;
     padding: 0 6px 4px;
     position: absolute;
