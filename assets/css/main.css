@@ -432,12 +432,12 @@ p.address-p {
     line-height: 0.6;
 }
 
-p.map-groups {
+p.map-groups, p.schedule-groups {
     margin-bottom: 0;
     text-decoration: underline;
 }
 
-ul.red-locations i {
+ul.red-locations i, ul.red-schedules i {
     color: rgb(253, 117, 105);
 }
 
