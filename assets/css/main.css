@@ -179,6 +179,7 @@ textarea {
 
 .alert-box {
   position: absolute;
+  border-radius: 6px;
   z-index: 3;
   margin-right: auto;
   margin-left: auto;
@@ -673,7 +674,7 @@ h2.home-titles {
     padding-top: 20px;
     text-decoration: underline; 
     font-size: 2.25em;
-    color: #8b8c90;
+    color: #ec1b16;
     font-family: Tahoma, Geneva, sans-serif;
 }       
 
@@ -783,6 +784,10 @@ ul.yellow-locations i {
 
 ul.purple-locations i {
     color: rgb(198, 153, 253);
+}
+
+ul.orange-locations i {
+  color: rgb(251, 139, 7);
 }
 
 /****** footer *******/
@@ -1009,7 +1014,6 @@ p.home-p {
   .footer p.copywrite {
     font-size: 0.875rem;}
   .footer .links a {
-    padding: 3rem 0 2rem;
     font-size: 1.1rem}
 
 }
