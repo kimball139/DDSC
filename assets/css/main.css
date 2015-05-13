@@ -178,30 +178,61 @@ textarea {
 }
 
 .alert-box {
-  position: absolute;
-  border-radius: 6px;
-  z-index: 3;
-  margin-right: auto;
-  margin-left: auto;
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
-  width: 450px;
-  top: 180px;
-  background-color: #ffffff;
-  border-color: #ec1b16;
+  width: 100%;
+  height: 170px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1500;
+  background-color: #ec1b16;
   color: #8b8c90;
   font-size: 16px;
-  border-width: 2px;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter:         drop-shadow(5px 5px 5px #222); 
+  border-radius: 0px;
+  border-width: 0px;
 }
 
-.alert-box a {
-  color: #ec1b16;
-}
-
-.alert-box a:hover {
+.alert-box h6 {
+  font-size: 25px;
+  line-height: 25px;
+  margin: 10px 0 15px;
   color: #161314;
+  text-rendering: optimizeLegibility;
+}
+
+.alert-box p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 12px;
+  color: #161314;
+  text-rendering: optimizeLegibility;
+}
+
+.alert-box .close {
+  margin-top: -4.6875rem;
+  opacity: 1;
+}
+
+.alert-box.radius {
+  border-radius: 0px;
+}
+
+.alert-box #btnRegister {
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  margin: 25px auto 0;
+  width: 180px;
+  color: #161314;
+  text-decoration: none;
+  border: 2px solid #161314;
+  cursor: pointer;
+}
+
+.alert-box #btnRegister:hover {
+  color: #ec1b16;
+  background-color: #161314;
 }
 
 /******* Off Canvas Menu ********/
@@ -500,7 +531,6 @@ ul.purple-locations i {
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
-    margin-left: 0;
     border: 0;
     box-shadow: none;
 }
@@ -511,8 +541,9 @@ ul.purple-locations i {
 
 .topbar-form .form-group {
     display: inline-block;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     vertical-align: middle;
+    width: 100%;
 }
 
 .form-control {
@@ -534,6 +565,10 @@ ul.purple-locations i {
 
 .topbar-form .form-control {
     display: inline-block;
+}
+
+.register-tab {
+  top: 83px;
 }
 
 .btn-success {
@@ -582,7 +617,7 @@ ul.purple-locations i {
   border-bottom-width: 10px;
   border-bottom-style: solid;}
   .hero img.logo {
-    width: 16rem;
+    width: 14rem;
     padding: 2rem; }
 
 .hero h1 {
@@ -600,11 +635,11 @@ ul.purple-locations i {
 
 .right-off-canvas-menu {
   background: #ec1b16;
-  padding: 3rem 3rem; }
+  padding: 3rem 1rem; }
   .right-off-canvas-menu .side-nav.main li a:not(.button) {
     font-weight: 100;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #323237;
     text-transform: capitalize; }
     .right-off-canvas-menu .side-nav.main li a:not(.button) .is-active, .right-off-canvas-menu .side-nav.main li a:not(.button):hover {
@@ -666,6 +701,64 @@ ul.purple-locations i {
 .bottom-bar-close {
   transform: rotate(45deg);
   background-color: #161314; }
+
+.alert-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1500;
+  background-color: #ec1b16;
+  color: #8b8c90;
+  font-size: 16px;
+  border-radius: 0px;
+  border-width: 0px;
+}
+
+.alert-box h6 {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 5px 0 15px;
+  color: #161314;
+  text-rendering: optimizeLegibility;
+}
+
+.alert-box p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 10px;
+  color: #161314;
+  text-rendering: optimizeLegibility;
+}
+
+.alert-box .close {
+  margin-top: -4.6875rem;
+  opacity: 1;
+}
+
+.alert-box.radius {
+  border-radius: 0px;
+}
+
+.alert-box #btnRegister {
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  margin: 25px auto 0;
+  width: 180px;
+  color: #161314;
+  text-decoration: none;
+  border: 2px solid #161314;
+  cursor: pointer;
+}
+
+.alert-box #btnRegister:hover {
+  color: #ec1b16;
+  background-color: #161314;
+}
 
 /******** Homepage **********/
 
@@ -829,14 +922,50 @@ ul.orange-locations i {
     padding-right: 20px;
 }
 
+.topbar-form {
+  margin-left: 0;
+}
+
 .form-control {
     padding: 6px 12px;
     font-size: 14px;
 }
 
+.topbar-form .form-group {
+  margin-bottom: 0px;
+  width: auto;
+}
+
+.register-tab {
+  top: 48px;
+}
+
 .btn {
   padding: 6px 22px;
   font-size: 14px;
+}
+
+.alert-box h6 {
+  font-size: 25px;
+  line-height: 25px;
+  margin: 10px 0 15px;
+}
+
+.alert-box p {
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.alert-box #btnRegister {
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  margin: 25px auto 0;
+  width: 180px;
+  color: #161314;
+  text-decoration: none;
+  border: 2px solid #161314;
+  cursor: pointer;
 }
 
 /******* Off Canvas Menu ********/
@@ -858,6 +987,9 @@ ul.orange-locations i {
     font-weight: 100;
     font-size: 1.3rem;
 }
+
+.right-off-canvas-menu {
+  padding: 3rem 2.5rem; }
 
 /******** Homepage **********/
 
