@@ -155,7 +155,7 @@ textarea {
   display: block;
   z-index: 3;
   position: absolute;
-  top: 48px;
+  top: 47px;
   right: 5px;
   background-color: #161314;
   padding-bottom: 5px;
@@ -201,7 +201,7 @@ textarea {
   text-rendering: optimizeLegibility;
 }
 
-.alert-box p {
+.alert-box p, .top-bar p {
   text-align: center;
   font-size: 15px;
   line-height: 12px;
@@ -218,7 +218,7 @@ textarea {
   border-radius: 0px;
 }
 
-.alert-box #btnRegister {
+.alert-box #btnRegister, .top-bar #btnRegister {
   display: block;
   position: relative;
   padding: 10px 20px;
@@ -230,9 +230,24 @@ textarea {
   cursor: pointer;
 }
 
+.top-bar #btnRegister {
+  margin: 6px auto 6px;
+  padding: 8px 15px;
+  color: #ec1b16;
+  float: right;
+  width: auto;
+  border: 2px solid #ec1b16;
+}
+
 .alert-box #btnRegister:hover {
   color: #ec1b16;
   background-color: #161314;
+}
+
+.top-bar #btnRegister:hover {
+  color: #ffffff;
+  background-color: #ec1b16;
+  border-color: #ffffff;
 }
 
 /******* Off Canvas Menu ********/
@@ -567,8 +582,12 @@ ul.purple-locations i {
     display: inline-block;
 }
 
+.register-link {
+  font-size: 12px;
+}
+
 .register-tab {
-  top: 83px;
+  top: 44px;
 }
 
 .btn-success {
@@ -726,12 +745,17 @@ ul.purple-locations i {
   text-rendering: optimizeLegibility;
 }
 
-.alert-box p {
+.alert-box p, .top-bar p {
   text-align: center;
   font-size: 12px;
   line-height: 10px;
   color: #161314;
   text-rendering: optimizeLegibility;
+}
+
+.top-bar p {
+  color: #ec1b16;
+  text-transform: uppercase;
 }
 
 .alert-box .close {
@@ -743,7 +767,7 @@ ul.purple-locations i {
   border-radius: 0px;
 }
 
-.alert-box #btnRegister {
+.alert-box #btnRegister, .top-bar #btnRegister {
   display: block;
   position: relative;
   padding: 10px 20px;
@@ -755,9 +779,24 @@ ul.purple-locations i {
   cursor: pointer;
 }
 
+.top-bar #btnRegister {
+  margin: 6px 6px 6px;
+  padding: 8px 15px;
+  color: #ec1b16;
+  float: right;
+  width: auto;
+  border: 2px solid #ec1b16;
+}
+
 .alert-box #btnRegister:hover {
   color: #ec1b16;
   background-color: #161314;
+}
+
+.top-bar #btnRegister:hover {
+  color: #ffffff;
+  background-color: #ec1b16;
+  border-color: #ffffff;
 }
 
 /******** Homepage **********/
@@ -937,7 +976,7 @@ ul.orange-locations i {
 }
 
 .register-tab {
-  top: 48px;
+  top: 47px;
 }
 
 .btn {
@@ -951,12 +990,12 @@ ul.orange-locations i {
   margin: 10px 0 15px;
 }
 
-.alert-box p {
+.alert-box p, .top-bar p {
   font-size: 15px;
   line-height: 12px;
 }
 
-.alert-box #btnRegister {
+.alert-box #btnRegister, .top-bar #btnRegister {
   display: block;
   position: relative;
   padding: 10px 20px;
@@ -966,6 +1005,15 @@ ul.orange-locations i {
   text-decoration: none;
   border: 2px solid #161314;
   cursor: pointer;
+}
+
+.top-bar #btnRegister {
+  margin: 6px auto 6px;
+  padding: 8px 15px;
+  color: #ec1b16;
+  float: right;
+  width: auto;
+  border: 2px solid #ec1b16;
 }
 
 /******* Off Canvas Menu ********/
