@@ -443,6 +443,19 @@ p.home-p a:hover, p.other-p a:hover {
     text-decoration: underline;
 }
 
+table tr td a {
+  color: #8b8c90;
+}
+
+table tr td a:hover {
+  color: #ec1b16;
+  text-decoration: underline;
+}
+
+h5.contact-description {
+  padding-bottom: 15px;
+}
+
 p.address-p {
     line-height: 0.6;
 }
