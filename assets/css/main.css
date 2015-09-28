@@ -485,6 +485,10 @@ ul.purple-locations i {
     color: rgb(198, 153, 253);
 }
 
+ul.orange-locations i {
+    color: rgb(251, 139, 7);
+}
+
 /****** footer *******/
 
 .footer {
